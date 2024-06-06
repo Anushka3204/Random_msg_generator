@@ -1,0 +1,70 @@
+<html>
+<head>
+     <title>MM App by Anushka</title>
+<style>
+    *{font-size:40px; font-family:Ink free;}
+    body{background-color:pink;}
+
+h1{font-size:50px;}
+h2{ font-size:35px; }
+    .btn{background-color:blue;color:white; border-radius:20px;margin-left:50px;} 
+    
+</style>
+</head>
+
+<body>
+<center>
+    <h1>Motivational Message Wallah</h1>
+    <form onsubmit="show()">
+    
+    <input type="submit" value="Get Message" class="btn" />
+      <br></br>
+<h2 id="msg"/>
+</form>
+
+
+<script>
+   function show()
+{
+   event.preventDefault();
+
+   let msg=document.getElementById("msg");
+ 
+
+let messages = [
+    "Don't watch the clock; do what it does. Keep going.",
+    "Keep your face always toward the sunshine—and shadows will fall behind you.",
+    "The only way to do great work is to love what you do.",
+    "You are never too old to set another goal or to dream a new dream.",
+    "It does not matter how slowly you go as long as you do not stop.",
+    "Start where you are. Use what you have. Do what you can.",
+    "Act as if what you do makes a difference. It does.",
+    "Success usually comes to those who are too busy to be looking for it." ];
+
+
+let r = parseInt(Math.random() * messages.length);
+msg.innerHTML =  " " + messages[r];
+}
+
+
+
+
+
+
+
+
+      </script>
+
+</center>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
